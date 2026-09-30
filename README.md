@@ -12,7 +12,7 @@ The `ClipCodec` is a filter codec: encoding passes the data through unchanged, d
 
 ```python
 from numcodecs_clip import ClipCodec
-from numcodecs_combinators import CodecStack
+from numcodecs_combinators.stack import CodecStack
 
 codec = CodecStack(
     ClipCodec(minimum=0.0, maximum=1.0),
